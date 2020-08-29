@@ -6,7 +6,7 @@ class AllProducts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text('Current Routine')
+            title: Text('All Products')
         ),
         body: Column(
             children: <Widget>[

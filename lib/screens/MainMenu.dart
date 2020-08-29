@@ -8,33 +8,25 @@ class MainMenu extends StatelessWidget {
         appBar: AppBar(
             title: Text('Current Routine')
         ),
-        body: Column(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              RaisedButton(
-                child: Text('Current Routine'),
-                onPressed: () {
-                  Navigator.pushNamed(context, '/routine/current');
-                },
-              ),
-              RaisedButton(
-                  child: Text('New Routine'),
+                RaisedButton(
+                  child: Text('My Shelfie'),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/routine/new');
-                  }
-              ),
-              RaisedButton(
-                  child: Text('New Product'),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/product/new');
-                  }
-              ),
-              RaisedButton(
-                  child: Text('New Routine'),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/product/all');
-                  }
-              ),
-            ]
+                    Navigator.pushNamed(context, '/shelfies');
+                  },
+                ),
+                RaisedButton(
+                    child: Text('New Routine'),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/skin-tracking');
+                    }
+                ),
+              ]
+          )
+
         )
     );
     throw UnimplementedError();
